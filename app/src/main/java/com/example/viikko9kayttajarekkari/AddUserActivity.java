@@ -1,6 +1,5 @@
 package com.example.viikko9kayttajarekkari;
 
-import android.content.ContentValues;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -9,9 +8,6 @@ import android.widget.RadioGroup;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class AddUserActivity extends AppCompatActivity {
 
@@ -35,8 +31,8 @@ public class AddUserActivity extends AppCompatActivity {
             degreeProgram = ((RadioButton) findViewById(R.id.seRadioButton)).getText().toString();
         }else if(chosenButton == R.id.imRadioButton){
            degreeProgram = ((RadioButton) findViewById(R.id.imRadioButton)).getText().toString();
-        }else if(chosenButton == R.id.ceRadioButton3){
-           degreeProgram = ((RadioButton) findViewById(R.id.ceRadioButton3)).getText().toString();
+        }else if(chosenButton == R.id.ceRadioButton){
+           degreeProgram = ((RadioButton) findViewById(R.id.ceRadioButton)).getText().toString();
         }else if(chosenButton == R.id.eeRadioButton){
            degreeProgram = ((RadioButton) findViewById(R.id.eeRadioButton)).getText().toString();
         }

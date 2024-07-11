@@ -82,7 +82,7 @@
             android:text="Industrial Management" />
 
         <RadioButton
-            android:id="@+id/ceRadioButton3"
+            android:id="@+id/ceRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
