@@ -8,7 +8,7 @@
     tools:context=".ListUserInRecycleViewActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/textViewSavedUsers"
+        android:id="@+id/rvUserView"
         android:layout_width="375dp"
         android:layout_height="697dp"
         android:layout_marginStart="16dp"

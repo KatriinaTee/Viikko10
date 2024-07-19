@@ -20,9 +20,9 @@ public class ListUserInRecycleViewActivity extends AppCompatActivity {
 
         storage = UserStorage.getInstance();
 
-        recyclerView = findViewById(R.id.textViewSavedUsers);
+        recyclerView = findViewById(R.id.rvUserView);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new UserListAdapter(this, storage.getUsers()));
+        recyclerView.setAdapter(new UserListAdapter(getApplicationContext(), storage.getUsers()));
     }
 }

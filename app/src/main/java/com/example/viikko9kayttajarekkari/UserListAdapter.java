@@ -21,13 +21,11 @@ public class UserListAdapter extends RecyclerView.Adapter<UserViewHolder> {
     @NonNull
     @Override
     public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        System.out.println(getItemCount());
         return new UserViewHolder(LayoutInflater.from(context).inflate(R.layout.user_view, parent,false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
-        System.out.println(users.get(position).getFirstName());
         holder.textFirstName.setText(users.get(position).getFirstName());
         holder.textLastName.setText(users.get(position).getLastName());
         holder.textEmail.setText(users.get(position).getEmail());

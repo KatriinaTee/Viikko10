@@ -38,7 +38,6 @@ public class AddUserActivity extends AppCompatActivity {
         }
 
         User user = new User(firstName, lastName, email, degreeProgram);
-        System.out.println(firstName + " " + lastName);
 
         UserStorage us = UserStorage.getInstance();
         us.addUser(user);
