@@ -6,14 +6,16 @@ public class User {
     protected String lastName;
     protected String email;
     protected String degreeProgram;
+    protected String textUserDegrees;
 
     public static int userCounter = 0;
 
-    public User(String firstName, String lastName, String email, String degreeProgram) {
+    public User(String firstName, String lastName, String email, String degreeProgram, String textUserDegrees) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.degreeProgram = degreeProgram;
+        this.textUserDegrees = textUserDegrees;
 
         userCounter++;
     }
@@ -29,9 +31,11 @@ public class User {
     public String getEmail() {
         return email;
     }
+    public String getTextUserDegrees() {
+        return textUserDegrees;
+    }
 
     public String getDegreeProgram() {
         return degreeProgram;
-
     }
 }

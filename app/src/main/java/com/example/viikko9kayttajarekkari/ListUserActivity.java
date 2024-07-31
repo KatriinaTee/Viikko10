@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ListUserInRecycleViewActivity extends AppCompatActivity {
+public class ListUserActivity extends AppCompatActivity {
 
     private UserStorage storage;
     private RecyclerView recyclerView;
@@ -19,6 +19,7 @@ public class ListUserInRecycleViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_user_in_recycle_view);
 
         storage = UserStorage.getInstance();
+        storage.readLog(getApplicationContext());
 
         recyclerView = findViewById(R.id.rvUserView);
 

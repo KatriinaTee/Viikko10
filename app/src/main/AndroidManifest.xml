@@ -16,7 +16,7 @@
             android:name=".ListUserInTextViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ListUserInRecycleViewActivity"
+            android:name=".ListUserActivity"
             android:exported="false" />
         <activity
             android:name=".AddUserActivity"
